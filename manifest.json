@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+  "name": "YouTube Looper",
+  "version": "1.0",
+  "description": "Loop specific parts of YouTube videos by setting custom start and end timestamps",
+  "icons": {
+    "48": "icons/icon-48.png",
+    "96": "icons/icon-96.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/watch*"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ],
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "youtube-looper@example.com"
+    }
+  }
+} 

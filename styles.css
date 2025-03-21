@@ -1,0 +1,207 @@
+#yt-looper-container {
+  font-family: 'Roboto', Arial, sans-serif;
+  background-color: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  margin: 16px 0;
+  width: 100%;
+  box-sizing: border-box;
+  color: #0f0f0f;
+  overflow: hidden;
+}
+
+.yt-looper-toggle-bar {
+  width: 100%;
+  text-align: left;
+}
+
+#yt-looper-toggle-button {
+  width: 100%;
+  background-color: #cc0000;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+#yt-looper-toggle-button:hover {
+  background-color: #a00000;
+}
+
+.yt-looper-content {
+  padding: 16px;
+  transition: max-height 0.3s ease-out;
+}
+
+.yt-looper-content.hidden {
+  display: none;
+}
+
+.yt-looper-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 8px;
+}
+
+.yt-looper-header h3 {
+  margin: 0;
+  color: #cc0000;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.yt-looper-toggle {
+  display: flex;
+  align-items: center;
+}
+
+.yt-looper-toggle input[type="checkbox"] {
+  margin-right: 6px;
+}
+
+.yt-looper-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.yt-looper-input-group {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  min-width: 200px;
+}
+
+.yt-looper-input-group label {
+  margin-right: 8px;
+  font-weight: 500;
+}
+
+.yt-looper-input-group input[type="text"] {
+  padding: 6px 10px;
+  border: 1px solid #d3d3d3;
+  border-radius: 4px;
+  width: 60px;
+  margin-right: 8px;
+}
+
+.yt-looper-actions {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+button {
+  background-color: #cc0000;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #a00000;
+}
+
+button#set-current-start,
+button#set-current-end {
+  background-color: #065fd4;
+  font-size: 12px;
+  padding: 6px 8px;
+}
+
+button#set-current-start:hover,
+button#set-current-end:hover {
+  background-color: #0352b9;
+}
+
+#saved-loops {
+  margin-top: 16px;
+  border-top: 1px solid #e0e0e0;
+  padding-top: 12px;
+}
+
+#saved-loops h4 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+#saved-loops ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#saved-loops li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+#saved-loops li:last-child {
+  border-bottom: none;
+}
+
+#saved-loops li span {
+  flex: 1;
+}
+
+#saved-loops button {
+  margin-left: 8px;
+  font-size: 12px;
+  padding: 4px 8px;
+}
+
+#saved-loops button.delete-saved {
+  background-color: #909090;
+}
+
+#saved-loops button.delete-saved:hover {
+  background-color: #707070;
+}
+
+/* Dark theme support */
+[dark] #yt-looper-container {
+  background-color: #212121;
+  border-color: #3d3d3d;
+  color: #fff;
+}
+
+[dark] #yt-looper-toggle-button {
+  background-color: #cc0000;
+  color: white;
+}
+
+[dark] #yt-looper-toggle-button:hover {
+  background-color: #a00000;
+}
+
+[dark] .yt-looper-header,
+[dark] #saved-loops {
+  border-color: #3d3d3d;
+}
+
+[dark] .yt-looper-input-group input[type="text"] {
+  background-color: #383838;
+  border-color: #5a5a5a;
+  color: #fff;
+}
+
+[dark] #saved-loops li {
+  border-color: #383838;
+} 
